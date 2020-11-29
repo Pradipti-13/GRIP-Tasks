@@ -1,0 +1,204 @@
+---
+title: "Superstore-Analysis-Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+#Sales and Profit
+
+Column {data-width=650, .tabset}
+-----------------------------------------------------------------------
+
+### Statewise Sales
+
+```{r}
+Sales_A
+```
+
+### Geographic Sales
+
+```{r}
+Sales_D
+```
+
+### Regionwise Sales
+
+```{r}
+Sales_C
+```
+
+### Statewise Profit
+
+```{r}
+Profit_A
+```
+
+### Geographic Profit
+
+```{r}
+Profit_D
+```
+
+### Regionwise Profit
+
+```{r}
+Profit_C
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Profit to Sales Ratio- Statewise
+
+```{r}
+Profit_to_Sales
+```
+
+### Profit to Sales Ratio- Segmentwise
+
+```{r}
+Boxseg4
+```
+
+#Profitable Goods/Products
+Column {data-width=333.33, .tabset}
+-----------------------------------------------------------------------
+
+### California
+
+```{r}
+CaliforniaOS
+```
+
+### New Jersey
+
+```{r}
+New_JerseyOS
+```
+
+### Connecticut
+
+```{r}
+ConnecticutOS
+```
+
+### Wisconsin
+
+```{r}
+WisconsinOS
+```
+
+### Colorado
+
+```{r}
+ColoradoOS
+```
+
+Column {data-width=333.33, .tabset}
+-----------------------------------------------------------------------
+
+### California
+
+```{r}
+CaliforniaFur
+```
+
+### New Jersey
+
+```{r}
+New_JerseyFur
+```
+
+### Connecticut
+
+```{r}
+ConnecticutFur
+```
+
+### Wisconsin
+
+```{r}
+WisconsinFur
+```
+
+### Colorado
+
+```{r}
+ColoradoFur
+```
+
+Column {data-width=333.33, .tabset}
+-----------------------------------------------------------------------
+
+### California
+
+```{r}
+CaliforniaTech
+```
+
+### New Jersey
+
+```{r}
+New_JerseyTech
+```
+
+### Connecticut
+
+```{r}
+ConnecticutTech
+```
+
+### Wisconsin
+
+```{r}
+WisconsinTech
+```
+
+### Colorado
+
+```{r}
+ColoradoTech
+```
+
+#Price per product and Shipping 
+Column {data-width=1000, .tabset}
+-----------------------------------------------------------------------
+
+### Price per Product
+
+```{r}
+Price_per_Product
+```
+
+### Profit per Product
+
+```{r}
+Profit_per_Product
+```
+
+### Shipping Profits
+
+```{r}
+ShippingPro
+```
+
+### Shipping by Category
+
+```{r}
+ShippingCate
+```
+
+### Shipping by Segment
+
+```{r}
+ShippingSeg
+```
+
+
